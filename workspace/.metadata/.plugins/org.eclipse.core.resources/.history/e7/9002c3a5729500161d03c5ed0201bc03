@@ -1,0 +1,9 @@
+package com.ujm.xmltech.services;
+
+public interface TransactionService {
+
+	void createTransaction();
+	
+	Transaction getTransactionById(long id);
+	
+}

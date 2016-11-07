@@ -1,0 +1,609 @@
+2016-10-18 21:42:29,578 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:42:37,589 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:42:37,590 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:42:37,590 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:42:37,590 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:42:38,142 [Worker-14] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:281) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:168) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:136) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob$1.doCreateMavenProjects(ImportMavenProjectsJob.java:68) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:62) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob.runInWorkspace(ImportMavenProjectsJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 20 common frames omitted
+2016-10-18 21:42:39,723 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 14 sec
+2016-10-18 21:42:42,267 [Worker-4] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/Gwendal/AppData/Local/Temp/RemoteBundleDiscoveryStrategy6126483788692088296.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_2298739573086630641.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2016-10-18 21:42:42,269 [Worker-4] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2016-10-18 21:42:42,280 [Worker-4] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/Gwendal/AppData/Local/Temp/RemoteBundleDiscoveryStrategy6126483788692088296.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_2298739573086630641.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive.xml
+2016-10-18 21:42:42,280 [Worker-4] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2016-10-18 21:42:44,523 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - No changes detected in schema or binding files, skipping source generation.
+2016-10-18 21:42:44,536 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:42:44,547 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:42:44,617 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:42:44,626 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:44:29,221 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:44:29,232 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:44:29,233 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:44:29,244 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:44:31,435 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:44:31,449 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:44:31,455 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:44:31,463 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:45:33,378 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:45:34,162 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:45:35,875 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:45:35,875 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:45:35,880 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:45:35,883 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:45:36,035 [Worker-12] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2016-10-18 21:45:36,975 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:45:36,992 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-10-18 21:45:39,305 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - No changes detected in schema or binding files, skipping source generation.
+2016-10-18 21:45:39,327 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:45:39,347 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:45:39,400 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:45:39,409 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:45:39,410 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:45:39,411 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:45:39,424 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:46:45,012 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:46:46,523 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:46:46,533 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:46:46,535 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:46:46,546 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:46:46,546 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:46:46,546 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:46:46,554 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:47:31,356 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:47:32,003 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:47:34,490 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:47:34,494 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:47:34,498 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:47:34,502 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:47:34,926 [Worker-11] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2016-10-18 21:47:35,761 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:47:35,770 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2016-10-18 21:47:41,784 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:47:41,795 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:47:41,843 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:47:41,860 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:47:41,867 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:47:41,867 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:47:41,878 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:48:15,223 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:48:15,956 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:48:17,808 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:48:17,809 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:48:17,809 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:48:17,809 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:48:17,947 [Worker-7] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2016-10-18 21:48:18,670 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:48:18,677 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-10-18 21:48:21,226 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:48:21,236 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:48:21,271 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:48:21,290 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:48:21,299 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:48:21,300 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:48:21,311 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:49:24,673 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:49:24,689 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:49:24,712 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:49:24,723 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:50:35,520 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:50:35,530 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:50:35,532 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:50:35,546 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:50:47,857 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:50:48,600 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:50:51,510 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:50:51,515 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:50:51,520 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:50:51,524 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:50:51,672 [Worker-4] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2016-10-18 21:50:52,314 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:50:52,320 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2016-10-18 21:50:54,983 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:50:54,993 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:50:55,028 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:50:55,045 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:50:55,053 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:50:55,053 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:50:55,063 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:51:31,223 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:51:31,233 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:51:31,234 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:51:31,244 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:51:36,747 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:51:36,756 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:51:36,758 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:51:36,772 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:53:36,942 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:53:36,952 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:53:36,997 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:53:37,007 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:54:19,349 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:54:19,355 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:54:19,377 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:54:19,385 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:54:54,625 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:54:55,440 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:54:58,116 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:54:58,120 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:54:58,125 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:54:58,129 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:54:58,281 [Worker-16] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2016-10-18 21:54:58,918 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:54:58,924 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2016-10-18 21:55:01,768 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:55:01,778 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:55:01,813 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:55:01,832 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:55:01,843 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:55:01,843 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:55:01,853 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:57:19,008 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:57:19,852 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:57:22,766 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:57:22,766 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:57:22,767 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:57:22,767 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:57:22,925 [Worker-19] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure ProjectBase
+org.eclipse.m2e.wtp.MarkedException: Unable to configure ProjectBase
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:432) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 18 common frames omitted
+2016-10-18 21:57:23,597 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:57:23,604 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2016-10-18 21:57:27,096 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:57:27,108 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:57:27,146 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:57:27,163 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:57:27,171 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:57:27,171 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:57:27,181 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:58:51,499 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 21:58:52,190 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 21:58:54,181 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 21:58:54,181 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 21:58:54,182 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 21:58:54,182 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 21:58:56,504 [Worker-20] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 21:58:56,516 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2016-10-18 21:59:00,997 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:59:01,010 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 21:59:01,042 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 21:59:01,051 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 21:59:01,052 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 21:59:01,052 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 21:59:01,056 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:00:02,424 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:00:02,433 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:00:02,467 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:00:02,474 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:00:56,650 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:00:59,650 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:00:59,657 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:00:59,658 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:00:59,667 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:00:59,667 [Worker-6] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:00:59,670 [Worker-6] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:00:59,674 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:01:05,046 [main] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/Gwendal/AppData/Local/Temp/RemoteBundleDiscoveryStrategy8887019671211322275.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_6554225909263660644.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2016-10-18 22:01:05,047 [main] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2016-10-18 22:01:05,052 [main] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/Gwendal/AppData/Local/Temp/RemoteBundleDiscoveryStrategy8887019671211322275.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_6554225909263660644.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive.xml
+2016-10-18 22:01:05,053 [main] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2016-10-18 22:04:38,964 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:04:40,579 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:04:40,590 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:04:40,595 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:04:40,603 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:04:40,603 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:04:40,603 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:04:40,607 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:07:26,719 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:07:26,728 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:07:26,734 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:07:26,739 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:07:44,146 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:07:44,152 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:07:44,154 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:07:44,159 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:19:55,200 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:19:55,208 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:19:55,215 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:19:55,223 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:20:11,862 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:20:11,869 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:20:11,872 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:20:11,877 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:21:05,267 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:21:05,278 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:21:05,285 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:21:05,289 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:21:16,136 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:21:16,145 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:21:16,148 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:21:16,153 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:21:55,762 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:21:55,772 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:21:55,779 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:21:55,784 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:23:01,436 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:23:01,444 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:23:01,447 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:23:01,452 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:23:57,481 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance
+2016-10-18 22:23:57,487 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2016-10-18 22:23:59,991 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:23:59,998 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:24:00,062 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:00,070 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:24:00,074 [Worker-24] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:24:00,074 [Worker-24] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:24:00,087 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:04,223 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance
+2016-10-18 22:24:04,224 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B generate-sources
+2016-10-18 22:24:26,874 [Worker-23] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 22:24:27,413 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:24:29,599 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 22:24:29,600 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 22:24:29,600 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 22:24:29,605 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 22:24:30,446 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 22:24:30,455 [Worker-23] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-10-18 22:24:31,864 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:31,873 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:24:31,908 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:31,916 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:24:31,916 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:24:31,920 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:24:31,924 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:58,105 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:58,113 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:24:58,114 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:24:58,120 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:17,113 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:25:18,923 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:18,933 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:18,935 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:18,943 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:18,944 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:25:18,948 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:25:18,951 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:22,863 [Worker-7] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance
+2016-10-18 22:25:22,863 [Worker-7] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B generate-sources
+2016-10-18 22:25:28,591 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:28,597 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:28,603 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:28,612 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:48,615 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:48,623 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:25:48,654 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:48,659 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:53,828 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 22:25:54,159 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:25:55,804 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 22:25:55,808 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 22:25:55,813 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 22:25:55,813 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 22:25:57,047 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 22:25:57,052 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-10-18 22:25:59,621 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - No changes detected in schema or binding files, skipping source generation.
+2016-10-18 22:25:59,817 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:59,826 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:25:59,858 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:25:59,866 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:25:59,866 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:25:59,867 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:25:59,871 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:26:20,131 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:26:21,672 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:26:21,678 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:26:21,680 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:26:21,684 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:26:21,685 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:26:21,685 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:26:21,688 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:26:28,155 [Worker-23] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-18 22:26:28,433 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ujm.xmltech:ProjectBase:1.0-SNAPSHOT @ C:\Users\Gwendal\Documents\CorrectionTP\InitialisationProjetAvance\pom.xml.
+2016-10-18 22:26:30,287 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/main/java
+2016-10-18 22:26:30,291 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/main/resources
+2016-10-18 22:26:30,295 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProjectBase/src/test/java
+2016-10-18 22:26:30,295 [Worker-23] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProjectBase/src/test/resources
+2016-10-18 22:26:31,405 [Worker-23] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ProjectBase
+2016-10-18 22:26:31,410 [Worker-23] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-10-18 22:26:33,372 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - No changes detected in schema or binding files, skipping source generation.
+2016-10-18 22:26:33,560 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:26:33,569 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:26:33,598 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:26:33,607 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:26:33,607 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ProjectBase
+2016-10-18 22:26:33,607 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ProjectBase
+2016-10-18 22:26:33,611 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:29:48,554 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:29:48,574 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:29:48,576 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:29:48,582 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:30:56,520 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:30:56,525 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:30:56,526 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:30:56,531 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:31:06,979 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:31:06,984 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:31:06,989 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:31:06,997 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:33:06,425 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:33:06,430 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:33:06,432 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:33:06,437 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:33:08,725 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:33:08,733 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:33:08,738 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:33:08,742 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:33:38,492 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:33:38,497 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:33:38,498 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:33:38,503 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:35:50,033 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:35:50,045 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:35:50,052 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:35:50,057 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:37:08,321 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:37:08,328 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:37:08,330 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:37:08,335 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:37:12,476 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:37:12,486 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:37:12,492 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:37:12,497 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:37:21,119 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:37:21,126 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:37:21,128 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:37:21,133 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:41:30,442 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:41:30,455 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:41:30,462 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:41:30,467 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:41:50,079 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:41:50,089 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:41:50,091 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:41:50,100 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:42:28,930 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:42:28,948 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-10-18 22:42:28,955 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:42:28,959 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:43:59,796 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:43:59,804 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:43:59,807 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:43:59,811 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:46:22,078 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:46:22,088 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:46:22,095 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:46:22,099 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:47:30,918 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:47:30,933 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:47:30,938 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:47:30,948 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:48:10,889 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:48:10,904 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:48:10,911 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:48:10,915 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:48:26,893 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:48:26,900 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:48:26,902 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:48:26,906 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:48:29,320 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:48:29,331 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:48:29,337 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:48:29,341 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 22:57:55,709 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:57:55,717 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 22:57:55,720 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 22:57:55,726 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-10-18 23:08:19,180 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - No changes detected in schema or binding files, skipping source generation.
+2016-10-18 23:08:20,335 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 23:08:20,417 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2016-10-18 23:08:20,424 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-18 23:08:20,443 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

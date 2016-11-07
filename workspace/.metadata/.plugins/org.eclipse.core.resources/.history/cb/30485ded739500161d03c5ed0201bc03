@@ -1,0 +1,37 @@
+package com.ujm.xmltech.dao.impl;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.ujm.xmltech.dao.TransactionDao;
+import com.ujm.xmltech.entity.Transaction;
+import com.ujm.xmltech.utils.BankSimulationConstants;
+
+@Repository("TransactionDao")
+public class TransactionDaoImpl implements TransactionDao {
+    @PersistenceContext(unitName = BankSimulationConstants.PERSISTENCE_UNIT)
+    protected EntityManager entityManager;
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW, value = BankSimulationConstants.TRANSACTION_MANAGER)
+    public void createTransaction(Transaction transaction) {
+        entityManager.persist(transaction);
+    }
+
+    @Override
+    public Transaction findTransactionById(long id) {
+    	 Query query = entityManager.createQuery("SELECT * FROM Transaction t WHERE t.id = :id").setParameter("id", id);
+    	 return (Transaction) query.getSingleResult();
+//        JPAQuery q = new JPAQuery();
+//        QTransaction transaction = QTransaction.transaction;
+//        q.from(transaction);
+//        q.where(transaction.id.eq(id));
+//        return q.uniqueResult(transaction);
+    }
+
+}

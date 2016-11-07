@@ -1,0 +1,15 @@
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ujm.xmltech.dao.TransactionDao;
+import com.ujm.xmltech.entity.Transaction;
+
+public class TestDB {
+	
+	@Autowired
+	  private TransactionDao dao;
+
+	  public void createTransaction() {
+	    Transaction transaction = dao.findTransactionById(1);
+	    System.out.println(transaction.getAmount());
+	  }
+}

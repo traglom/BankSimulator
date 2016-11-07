@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<company>
+    <record refId="1001">
+        <name>mkyong</name>
+        <age>31</age>
+        <dob>31/8/1982</dob>
+        <income>200000</income>
+    </record>
+    <record refId="1002">
+        <name>kkwong</name>
+        <age>30</age>
+        <dob>26/7/1983</dob>
+        <income>100999</income>
+    </record>
+    <record refId="1003">
+        <name>joel</name>
+        <age>29</age>
+        <dob>21/8/1984</dob>
+        <income>1000000</income>
+    </record>
+    <record refId="1004">
+        <name>leeyy</name>
+        <age>29</age>
+        <dob>21/3/1984</dob>
+        <income>8000089</income>
+    </record>
+</company>

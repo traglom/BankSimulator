@@ -1,0 +1,102 @@
+nov. 04, 2016 3:37:12 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+nov. 04, 2016 3:37:12 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Global resources are available
+nov. 04, 2016 3:37:12 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 3:37:12 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 3:37:13 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context7967362319414422282.xml'
+nov. 04, 2016 3:37:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 3:37:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 3:37:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context4501118119792638901.xml'
+nov. 04, 2016 3:49:00 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 3:49:00 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 3:49:01 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context4524207623627611644.xml'
+nov. 04, 2016 3:49:08 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 3:49:08 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 3:49:09 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context8034373533620316597.xml'
+nov. 04, 2016 3:50:46 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+nov. 04, 2016 3:50:46 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Global resources are available
+nov. 04, 2016 3:50:46 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 3:50:46 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 3:50:47 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context4267927601853361828.xml'
+nov. 04, 2016 3:50:53 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: start: Starting web application '/ProjectBase'
+nov. 04, 2016 4:13:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:13:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:13:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 4:13:45 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context5255265129066655584.xml'
+nov. 04, 2016 4:13:50 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: start: Starting web application '/ProjectBase'
+nov. 04, 2016 4:14:35 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+nov. 04, 2016 4:14:35 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Global resources are available
+nov. 04, 2016 4:14:35 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:14:35 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:14:35 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 4:14:36 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context9196558847856021702.xml'
+nov. 04, 2016 4:14:41 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: start: Starting web application '/ProjectBase'
+nov. 04, 2016 4:21:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:21:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: restart: Reloading web application '/ProjectBase'
+nov. 04, 2016 4:23:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+nov. 04, 2016 4:23:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Global resources are available
+nov. 04, 2016 4:23:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:23:43 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:23:44 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 4:23:45 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context9091226501597586333.xml'
+nov. 04, 2016 4:23:50 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: start: Starting web application '/ProjectBase'
+nov. 04, 2016 4:25:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+nov. 04, 2016 4:25:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: init: Global resources are available
+nov. 04, 2016 4:25:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:25:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:25:31 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 4:25:32 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context1163008327242568463.xml'
+nov. 04, 2016 4:25:36 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: start: Starting web application '/ProjectBase'
+nov. 04, 2016 4:26:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: list: Listing contexts for virtual host 'localhost'
+nov. 04, 2016 4:26:23 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: undeploy: Undeploying web application at '/ProjectBase'
+nov. 04, 2016 4:26:24 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Manager: install: Installing context configuration at 'file:/tmp/context8511934523109006889.xml'

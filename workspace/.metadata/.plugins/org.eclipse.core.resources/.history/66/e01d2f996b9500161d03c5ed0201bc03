@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ujm.xmltech</groupId>
+	<artifactId>ProjectBase</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>ProjectBase</name>
+
+	<properties>
+		<jdk.version>1.6</jdk.version>
+		<spring.version>3.2.2.RELEASE</spring.version>
+		<spring.batch.version>2.2.0.RELEASE</spring.batch.version>
+		<querydsl-version>2.1.1</querydsl-version>
+		<c3p0-version>0.9.1.2</c3p0-version>
+		<mysql-version>5.1.13</mysql-version>
+
+		<hibernate-jpa-api>1.0.0.Final</hibernate-jpa-api>
+		<hibernate-version>4.2.15.Final</hibernate-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<!-- Spring Core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring XML to/back object -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- Spring Batch dependencies -->
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
+			<version>${spring.batch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-infrastructure</artifactId>
+			<version>${spring.batch.version}</version>
+		</dependency>
+
+		<!-- Spring Batch unit test -->
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-test</artifactId>
+			<version>${spring.batch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- Junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- BDD -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${c3p0-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-version}</version>
+		</dependency>
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>${hibernate-jpa-api}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mysema.querydsl</groupId>
+			<artifactId>querydsl-core</artifactId>
+			<version>${querydsl-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.mysema.querydsl</groupId>
+			<artifactId>querydsl-apt</artifactId>
+			<version>${querydsl-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.mysema.querydsl</groupId>
+			<artifactId>querydsl-jpa</artifactId>
+			<version>${querydsl-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>spring-batch</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>false</downloadJavadocs>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<version>1.3</version>
+				<executions>
+					<execution>
+						<id>iso</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+						<configuration>
+							<schemaDirectory>${basedir}/src/main/resources/xsd
+							</schemaDirectory>
+							<schemaFile>pain.008.001.02.xsd</schemaFile>
+							<clearOutputDir>true</clearOutputDir>
+							<staleFile>${project.build.directory}/generated-sources/jaxb/.staleFlag
+							</staleFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.mysema.maven</groupId>
+				<artifactId>maven-apt-plugin</artifactId>
+				<version>1.0.2</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>process</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>target/generated-sources/java</outputDirectory>
+							<processor>com.mysema.query.apt.jpa.JPAAnnotationProcessor
+							</processor>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

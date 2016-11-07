@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<description>Admin Datasource Definition</description>
+
+
+	<tx:annotation-driven />
+	<context:annotation-config /> 	
+	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+	<bean id="jpaAdapter"
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="showSql" value="${jpa.showSql}" />
+		<property name="databasePlatform" value="${jpa.dialect}" />
+		<property name="generateDdl" value="${jpa.generateDdl}" />
+	</bean>
+
+	<!-- Entity Manager configurations -->
+	<bean id="bankEntityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="jpaVendorAdapter" ref="jpaAdapter" />
+		<property name="persistenceUnitName" value="bank-unit" />
+		<property name="dataSource" ref="bankDataSource" />
+	</bean>
+
+	<bean id="bankTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="bankEntityManagerFactory" />
+	</bean>
+
+	<bean id="bankDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="user" value="${hibernate.connection.username}" />
+		<property name="password" value="${hibernate.connection.password}" />
+		<property name="driverClass" value="${hibernate.connection.driver_class}" />
+		<property name="jdbcUrl" value="${hibernate.connection.url}" />
+		<property name="initialPoolSize" value="${hibernate.connection.initialPoolSize}" />
+		<property name="minPoolSize" value="${hibernate.connection.minPoolSize}" />
+		<property name="maxPoolSize" value="${hibernate.connection.maxPoolSize}" />
+		<property name="acquireIncrement" value="${hibernate.connection.acquireIncrement}" />
+		<property name="acquireRetryAttempts" value="${hibernate.connection.acquireRetryAttempts}" />
+		<property name="idleConnectionTestPeriod"
+			value="${hibernate.connection.idleConnectionTestPeriod}" />
+	</bean>
+
+</beans>

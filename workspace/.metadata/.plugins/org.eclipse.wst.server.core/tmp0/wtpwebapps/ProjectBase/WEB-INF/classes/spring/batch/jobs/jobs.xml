@@ -1,0 +1,61 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:bat="http://www.springframework.org/schema/batch" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/batch
+		http://www.springframework.org/schema/batch/spring-batch-2.2.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/util 
+		http://www.springframework.org/schema/util/spring-util-3.2.xsd
+		http://www.springframework.org/schema/context
+    	http://www.springframework.org/schema/context/spring-context.xsd
+    	http://www.springframework.org/schema/task
+        http://www.springframework.org/schema/task/spring-task-3.2.xsd">
+
+	<import resource="../config/context.xml" />
+	<import resource="../config/db-context.xml" />
+
+	<context:component-scan base-package="com.ujm.xmltech.services" />
+	<context:component-scan base-package="com.ujm.xmltech.dao" />
+
+	<task:scheduler id="myScheduler" pool-size="10" />
+
+	<task:scheduled-tasks scheduler="myScheduler">
+		<task:scheduled ref="main" method="launch" cron="*/10 * * * * *" />
+	</task:scheduled-tasks>
+
+	<bean id="main" class="com.ujm.xmltech.App" />
+
+	<bat:job id="integratePain008File">
+		<bat:step id="moveToWork" next="validateFile">
+			<bat:tasklet ref="moveToWorkTasklet" />
+		</bat:step>
+		<bat:step id="validateFile" next="readFile">
+			<bat:tasklet ref="validateFileTasklet" />
+		</bat:step>
+		<bat:step id="readFile" next="moveToArchive">
+			<bat:tasklet ref="xmlItemReader" />
+		</bat:step>
+		<bat:step id="moveToArchive">
+			<bat:tasklet ref="moveToArchiveTasklet" />
+		</bat:step>
+	</bat:job>
+
+	<!--  <bat:job id="writePain008Report">
+		<bat:step id="writeReport">
+			<bat:tasklet ref="xmlFileItemWriter" />
+		</bat:step>
+	</bat:job>  -->
+
+	<bean id="moveToWorkTasklet" class="com.ujm.xmltech.tasklet.MoveToWork" />
+	<bean id="validateFileTasklet" class="com.ujm.xmltech.tasklet.Pain008Checker" />
+	<bean id="xmlItemReader" class="com.ujm.xmltech.tasklet.Pain008Reader"
+		scope="step" />
+	<bean id="itemProcessor" class="com.ujm.xmltech.tasklet.Pain008Processor"
+		scope="step" />
+	<bean id="xmlFileItemWriter" class="com.ujm.xmltech.tasklet.Pain008Writer"
+		scope="step" />
+	<bean id="moveToArchiveTasklet" class="com.ujm.xmltech.tasklet.MoveToArchive" />
+
+</beans>
