@@ -1,1 +1,14 @@
+*.log
+*.dpf
+*.txt
+*.jar
+*.war
+*.ear
 *.class
+
+#Tomcat
+tomcat/
+
+#Project
+InitialisationProjetAvance/target
+database.properties
