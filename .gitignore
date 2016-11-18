@@ -5,7 +5,14 @@
 *.war
 *.ear
 *.class
+*.swp
 
 #Project
 InitialisationProjetAvance/target
 database.properties
+
+#Private
+folders/archive/
+folders/in/
+folders/out/
+folders/work/

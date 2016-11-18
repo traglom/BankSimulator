@@ -1,4 +1,4 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
+fintegratePain008File<beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:bat="http://www.springframework.org/schema/batch" xmlns:task="http://www.springframework.org/schema/task"
 	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -50,12 +50,9 @@
 
 	<bean id="moveToWorkTasklet" class="com.ujm.xmltech.tasklet.MoveToWork" />
 	<bean id="validateFileTasklet" class="com.ujm.xmltech.tasklet.Pain008Checker" />
-	<bean id="xmlItemReader" class="com.ujm.xmltech.tasklet.Pain008Reader"
-		scope="step" />
-	<bean id="itemProcessor" class="com.ujm.xmltech.tasklet.Pain008Processor"
-		scope="step" />
-	<bean id="xmlFileItemWriter" class="com.ujm.xmltech.tasklet.Pain008Writer"
-		scope="step" />
+	<bean id="xmlItemReader" class="com.ujm.xmltech.tasklet.Pain008Reader" scope="step" />
+	<bean id="itemProcessor" class="com.ujm.xmltech.tasklet.Pain008Processor" scope="step" />
+	<bean id="xmlFileItemWriter" class="com.ujm.xmltech.tasklet.Pain008Writer" scope="step" />
 	<bean id="moveToArchiveTasklet" class="com.ujm.xmltech.tasklet.MoveToArchive" />
 
 </beans>

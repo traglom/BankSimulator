@@ -15,8 +15,9 @@ public class TransactionServiceImpl implements TransactionService {
 
   public void createTransaction() {
     Transaction transaction = new Transaction();
-    transaction.setAmount(500);
+    transaction.setAmount(600);
     transaction.setEndToEndId("uniqIdentifier");
+    System.out.println("----------------PASSE------------");
     dao.createTransaction(transaction);
   }
   
