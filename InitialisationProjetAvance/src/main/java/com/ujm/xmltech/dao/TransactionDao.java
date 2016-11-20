@@ -1,11 +1,17 @@
 package com.ujm.xmltech.dao;
 
+import com.ujm.xmltech.entity.File;
 import com.ujm.xmltech.entity.Transaction;
+import com.ujm.xmltech.entity.ErrorCode;
 
 public interface TransactionDao {
 
-  void createTransaction(Transaction transaction);
+    void createFile(File file);
 
-  Transaction findTransactionById(long id);
+    void createTransaction(Transaction transaction);
+
+    void createErrorCode(ErrorCode errorCode);
+
+    Transaction findTransactionById(long id);
 
 }

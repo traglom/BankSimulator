@@ -9,14 +9,12 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Transaction implements Serializable {
+public class ErrorCode implements Serializable {
     @Id
     @GeneratedValue
     private long id;
     
-    private long file_id;
+    private long transation_id;
     
-    private long amount;
-    private String end_to_end_id, debtor, creditor, date, currency, name;
-    private static final long serialVersionUID = 8315057757268890401L;
+    private String code;
 }

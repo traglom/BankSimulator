@@ -47,14 +47,12 @@ public class Pain008Reader implements Tasklet {
             FileReader fileReader = new FileReader(f);
             JAXBElement element = (JAXBElement) u.unmarshal(fileReader);
             Document document = (Document) element.getValue();
-            GroupHeader39 header = document.getCstmrDrctDbtInitn().getGrpHdr();
-            System.out.println(header.getMsgId());
-            Iterator<PaymentInstructionInformation4> it = document.getCstmrDrctDbtInitn().getPmtInf().iterator();
-            while (it.hasNext()) {
-                PaymentInstructionInformation4 transaction = it.next();
-                service.createTransaction(transaction);
-                System.out.println("Transaction "+transaction.getPmtInfId()+" created");
-            }
+            
+            /* Id of file */
+            System.out.println(document.getCstmrDrctDbtInitn().getGrpHdr().getMsgId());
+            
+            /* Service to persist */
+            service.createTransaction(document.getCstmrDrctDbtInitn());
 
             return document.getCstmrDrctDbtInitn();
         } catch (JAXBException e) {
