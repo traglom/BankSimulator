@@ -4,67 +4,17 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import lombok.Data;
 
 @Entity
+@Data
 public class Transaction implements Serializable {
-
-    /**
-     *
-     */
-    private static final long serialVersionUID = 8315057757268890401L;
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private long id;
-
     private long amount;
-
-    private String endToEndId;
-
-    private String name;
-
-    private String date;
-    
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public long getAmount() {
-        return amount;
-    }
-
-    public void setAmount(long amount) {
-        this.amount = amount;
-    }
-
-    public String getEndToEndId() {
-        return endToEndId;
-    }
-
-    public void setEndToEndId(String endToEndId) {
-        this.endToEndId = endToEndId;
-    }
-
-	public void setDate(String date) {
-		this.date = date;
-	}
-
-	public String getDate() {
-		return date;
-	}
-
+    private int worked;
+    private String endToEndId, name, date;
+    private static final long serialVersionUID = 8315057757268890401L;
 }

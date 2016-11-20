@@ -51,7 +51,6 @@
 	<bean id="moveToWorkTasklet" class="com.ujm.xmltech.tasklet.MoveToWork" />
 	<bean id="validateFileTasklet" class="com.ujm.xmltech.tasklet.Pain008Checker" />
 	<bean id="xmlItemReader" class="com.ujm.xmltech.tasklet.Pain008Reader" scope="step" />
-	<bean id="itemProcessor" class="com.ujm.xmltech.tasklet.Pain008Processor" scope="step" />
 	<bean id="xmlFileItemWriter" class="com.ujm.xmltech.tasklet.Pain008Writer" scope="step" />
 	<bean id="moveToArchiveTasklet" class="com.ujm.xmltech.tasklet.MoveToArchive" />
 
