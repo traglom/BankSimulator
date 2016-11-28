@@ -24,7 +24,7 @@ public class Pain008Checker implements Tasklet {
             File fileToValidate = new File(BankSimulationConstants.WORK_DIRECTORY + fileName);
             String xsd = "xsd/pain.008.001.02.xsd";
             ClassLoader classLoader = getClass().getClassLoader();
-        	File xsdFile = new File(classLoader.getResource(xsd).getFile());
+            File xsdFile = new File(classLoader.getResource(xsd).getFile());
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(xsdFile);
             Validator validator = schema.newValidator();
@@ -33,6 +33,10 @@ public class Pain008Checker implements Tasklet {
             e.printStackTrace();
             return false;
         } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        } catch (IllegalArgumentException e) { // Bad XSD format
+            System.out.println("XSD error");
             e.printStackTrace();
             return false;
         }

@@ -5,5 +5,5 @@ package com.ujm.xmltech.utils;
  * 
  */
 public enum Banks {
-    BKNK, UDEV;
+    JAKY, BRSC, NYCU, ARMA, KAMY;
 }

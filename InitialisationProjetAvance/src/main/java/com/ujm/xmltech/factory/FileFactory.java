@@ -6,7 +6,9 @@
 package com.ujm.xmltech.factory;
 
 import com.ujm.xmltech.entity.File;
+import com.ujm.xmltech.utils.BankSimulationConstants;
 import iso.std.iso._20022.tech.xsd.pain_008_001.GroupHeader39;
+import java.util.Calendar;
 
 /**
  *
@@ -17,13 +19,14 @@ public class FileFactory {
     /**
      * Creat a File
      * @param head
+     * @param name
      * @return File
      */
-    public File creatFile(GroupHeader39 head) {
+    public File creatFile(GroupHeader39 head, String name) {
         File file = new File();
         
         file.setFile_id(head.getMsgId());
-        file.setName("???");
+        file.setName(name);
         file.setDone(false);
         
         return file;

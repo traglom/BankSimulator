@@ -8,8 +8,12 @@ public interface TransactionDao {
 
     void createFile(File file);
 
-    void createTransaction(Transaction transaction);
+    Transaction createTransaction(Transaction transaction);
+    
+    Transaction haveAFrstEntry(String endToEndId);
 
+    File findFileByName(String name);
+    
     void createErrorCode(ErrorCode errorCode);
 
     Transaction findTransactionById(long id);

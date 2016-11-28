@@ -12,9 +12,9 @@ InitialisationProjetAvance/target
 database.properties
 
 #Private
-folders/archive/
-folders/in/
-folders/out/
-folders/work/
+folders/archive
+folders/in
+folders/out
+folders/work
 
 tomcat/

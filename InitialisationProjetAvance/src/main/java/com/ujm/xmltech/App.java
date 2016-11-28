@@ -10,7 +10,7 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.ujm.xmltech.utils.BankSimulationConstants;
+import static com.ujm.xmltech.utils.FileManagementUtils.retrieveFileToProcess;
 
 public class App {
 
@@ -27,20 +27,9 @@ public class App {
                 System.out.println("Exit Status : " + execution.getStatus());
             } catch (Exception e) {
                 e.printStackTrace();
-                System.out.println("Il faut kill le job PUTAIN!!!!!!!!!!!!!!!!!!!!!!!");
             }
         } else {
             System.out.println("[" + Calendar.getInstance().getTime().toString() + "] No file to process");
         }
-    }
-
-    private File retrieveFileToProcess() {
-        File toReturn = null;
-        File folder = new File(BankSimulationConstants.IN_DIRECTORY);
-        for (File file : folder.listFiles()) {
-            System.out.println("File found : " + file.getName());
-            toReturn = file;
-        }
-        return toReturn;
     }
 }

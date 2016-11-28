@@ -22,8 +22,10 @@ public class TransactionDaoImpl implements TransactionDao {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRES_NEW, value = BankSimulationConstants.TRANSACTION_MANAGER)
-    public void createTransaction(Transaction transaction) {
+    public Transaction createTransaction(Transaction transaction) {
         entityManager.persist(transaction);
+        entityManager.flush();
+        return transaction;
     }
 
     @Override
@@ -39,6 +41,26 @@ public class TransactionDaoImpl implements TransactionDao {
     }
 
     @Override
+    public File findFileByName(String name) {
+        Query query = entityManager.createQuery("SELECT f FROM File f WHERE f.name = :name").setParameter("name", name);
+        try {
+            return (File) query.getSingleResult();
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    @Override
+    public Transaction haveAFrstEntry(String endToEndId) {
+        Query query = entityManager.createQuery("SELECT t FROM Transaction t WHERE t.end_to_end_id = :endToEndId AND t.sequence = 'FRST'").setParameter("endToEndId", endToEndId);
+        try {
+            return (Transaction) query.getSingleResult();
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    @Override
     @Transactional(propagation = Propagation.REQUIRES_NEW, value = BankSimulationConstants.TRANSACTION_MANAGER)
     public void createFile(File file) {
         entityManager.persist(file);
@@ -47,7 +69,6 @@ public class TransactionDaoImpl implements TransactionDao {
     @Override
     @Transactional(propagation = Propagation.REQUIRES_NEW, value = BankSimulationConstants.TRANSACTION_MANAGER)
     public void createErrorCode(ErrorCode errorCode) {
-        System.out.println(errorCode.getCode());
         entityManager.persist(errorCode);
     }
 }

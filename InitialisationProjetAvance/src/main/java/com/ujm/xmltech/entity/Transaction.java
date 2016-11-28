@@ -14,9 +14,7 @@ public class Transaction implements Serializable {
     @GeneratedValue
     private long id;
     
-    private long file_id;
-    
     private long amount;
-    private String end_to_end_id, debtor, creditor, date, currency, name;
+    private String end_to_end_id, debtor, creditor, date, currency, sequence, file_id;
     private static final long serialVersionUID = 8315057757268890401L;
 }
